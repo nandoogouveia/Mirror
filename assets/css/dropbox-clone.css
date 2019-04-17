@@ -441,6 +441,17 @@ body {
 }
 /*variantes de estilo 3*/
 
+.mc-button-circular:hover {
+  background: none;
+}
+
+.mc-button-full-width {
+  width: 100%;
+}
+/*variantes de estilo 4*/
+
+
+
 
 
 
