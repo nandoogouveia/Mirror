@@ -366,6 +366,16 @@ body {
 }
 /*estilo de botões primarios*/
 
+.mc-button-primary:active {
+  background-color: #005dd6;
+}
+
+.mc-button-primary:disabled,
+.mc-button-primary.mc-button-disabled {
+  background-color: #99c6f3;
+}
+
+
 
 
 
