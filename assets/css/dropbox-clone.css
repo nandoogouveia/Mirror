@@ -665,6 +665,32 @@ body {
 }
 /*picker4*/
 
+.mc-datepicker .DayPicker-NavButton--interactionDisabled {
+  display: none;
+}
+
+.mc-datepicker .DayPicker-Caption {
+  display: table-caption;
+  padding: 0 25px;
+  text-align: center;
+  width: 155px;
+}
+
+.mc-datepicker .DayPicker-Caption > div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.mc-datepicker .DayPicker-Weekdays {
+  display: table-header-group;
+}
+
+.mc-datepicker .DayPicker-WeekdaysRow {
+  display: table-row;
+}
+/*picker5*/
+
 
 
 
