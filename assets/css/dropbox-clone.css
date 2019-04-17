@@ -2147,6 +2147,82 @@ body {
 /*separador qualquer que deixei aí*/
 
 
+/* web specific content */
+
+/* -- radio_button/index.web.css */
+.mc-radio {
+  transition: opacity 0.1s ease-out, box-shadow 0.15s ease-out;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 0px 1px #c1c7cd;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.mc-radio:checked {
+  box-shadow: inset 0px 0px 0px 5px #0070e0;
+}
+
+.mc-radio:active:not(:disabled) {
+  background-color: #ebf4fd;
+}
+
+.mc-radio:hover {
+  box-shadow: inset 0px 0px 0px 1px #0070e0;
+}
+
+.mc-radio:checked:hover:not(.mc-radio-disabled) {
+  box-shadow: inset 0px 0px 0px 5px #007af5;
+}
+
+.mc-radio:focus {
+  box-shadow: inset 0px 0px 0px 1px #0070e0, 0 0 0 3px #99c6f3;
+}
+
+.mc-radio:focus:active {
+  box-shadow: inset 0px 0px 0px 1px #0070e0;
+}
+
+.mc-radio:checked:focus {
+  box-shadow: inset 0px 0px 0px 5px #0070e0, 0 0 0 3px #99c6f3;
+}
+
+.mc-radio:checked:active:not(:disabled) {
+  box-shadow: inset 0px 0px 0px 5px #005dd6;
+  background-color: #d6e8fa;
+}
+
+.mc-radio-disabled:hover {
+  box-shadow: inset 0px 0px 0px 1px #c1c7cd;
+}
+
+.mc-radio-disabled {
+  box-shadow: inset 0px 0px 0px 1px #c1c7cd;
+  background-color: #e6e8eb;
+}
+
+.mc-radio-disabled:checked {
+  background-color: #c1c7cd;
+  box-shadow: inset 0px 0px 0px 5px #e6e8eb,
+    0px 0px 0px 1px #c1c7cd;
+}
+
+/*ie10+ cant draw box-shadow with border radius that is centered 100% of the time, so we need to
+ minimize the number of box-shadow we use at the same time in ie10+ */
+
+.mc-radio::-ms-check {
+  border: 0;
+  color: transparent;
+  background-color: transparent;
+}
+/*radius do ste*/
+
 
 
 
