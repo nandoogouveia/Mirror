@@ -8,3 +8,19 @@ body {
   vertical-align: text-bottom;
 }
 /* body estilo */
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0;
+  min-width: 215px;
+}
+/* sidebar 1 */
