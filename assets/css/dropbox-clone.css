@@ -428,6 +428,19 @@ body {
 }
 /*variantes de estilo 2*/
 
+.mc-button-invisible {
+  /* use opacity instead of visibility for screen readers */
+  opacity: 0;
+}
+
+.mc-button-circular {
+  padding: 0;
+  border: none;
+  background: none;
+  border-radius: 50%;
+}
+/*variantes de estilo 3*/
+
 
 
 
