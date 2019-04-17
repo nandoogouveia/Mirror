@@ -621,6 +621,35 @@ body {
 }
 /*Picker 2*/
 
+.mc-datepicker .DayPicker-Month {
+  display: table;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-collapse: separate;
+  border-spacing: 0px 4px;
+}
+
+.mc-datepicker .DayPicker-NavBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0 8px;
+  top: 16px;
+}
+
+.mc-datepicker .DayPicker-NavButton {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+/*picker3*/
+
 
 
 
