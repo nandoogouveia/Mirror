@@ -239,6 +239,21 @@ body {
 }
 /*web avatar 1*/
 
+.mc-avatar-initials-40 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.mc-avatar {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: 0;
+}
+/*web avatar 2*/
+
+
 
 
 
