@@ -400,7 +400,12 @@ body {
 }
 /*estilos de botões secundarios 2*/
 
-
+.mc-button-secondary:disabled,
+.mc-button-secondary.mc-button-disabled {
+  color: #c1c7cd;
+  border-color: #c1c7cd;
+}
+/*disabilitar botões*/
 
 
 
