@@ -58,3 +58,11 @@ body {
   color: inherit;
 }
 /*sidebar 4 */
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+/*sidebar 5*/
+
+
