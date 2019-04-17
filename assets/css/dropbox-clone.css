@@ -51,3 +51,10 @@ body {
   color: #007bff;
 }
 /* sidebar 3 */
+
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+/*sidebar 4 */
