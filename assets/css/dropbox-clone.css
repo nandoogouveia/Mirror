@@ -314,6 +314,20 @@ body {
 /*estilos dos botões*/
 
 
+.mc-button:disabled,
+.mc-button-disabled {
+  cursor: default;
+}
+
+.mc-button:focus,
+.mc-popover-trigger:focus > .mc-button,
+.mc-dropdown-menu-button:focus > .mc-button {
+  /* Temp focus patch for <Button tagName="span" /> to be styled when nested in of a popover or menu trigger */
+  /* See https://github.com/dropbox/mcl/issues/25 */
+  box-shadow: 0 0 0 3px #99c6f3;
+}
+/*botões de focus*/
+
 
 
 
