@@ -714,6 +714,42 @@ body {
 }
 /*picker6*/
 
+.mc-datepicker .DayPicker-WeekNumber {
+  display: table-cell;
+  padding: 8px;
+  text-align: right;
+  vertical-align: middle;
+  min-width: 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.mc-datepicker .DayPicker--interactionDisabled .DayPicker-Day {
+  cursor: default;
+}
+
+.mc-datepicker .DayPicker-Weekday abbr {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.mc-datepicker .DayPicker-Footer {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 8px;
+}
+
+.mc-datepicker .DayPicker-TodayButton {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+/*picker7*/
+
+
 
 
 
