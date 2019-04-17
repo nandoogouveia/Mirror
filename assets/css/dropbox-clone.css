@@ -161,5 +161,30 @@ body {
 }
 /*Menu 2*/
 
+.mc-account-menu-title {
+  width: 100%;
+  box-sizing: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 16px 0;
+  padding: 16px 16px;
+  text-align: left;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: default;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e6e8eb;
+}
+/*Menu 38*/
+
+
+
 
 
