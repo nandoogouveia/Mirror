@@ -349,7 +349,22 @@ body {
 }
 /*botões focus Firefox*/
 
+/** Primary button styles */
 
+.mc-button-primary {
+  line-height: 32px;
+  padding: 0 16px;
+  font-weight: 500;
+  border: none;
+
+  color: #fff;
+  background-color: #0070e0;
+}
+
+.mc-button-primary:hover {
+  background-color: #007af5;
+}
+/*estilo de botões primarios*/
 
 
 
