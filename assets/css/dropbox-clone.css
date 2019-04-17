@@ -202,6 +202,15 @@ body {
 }
 /*Menu 5*/
 
+.mc-account-menu-separator {
+  border: none;
+  border-bottom: 1px solid #e6e8eb;
+  margin: 16px 0;
+}
+/*Menu 6*/
+
+
+
 
 
 
