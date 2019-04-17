@@ -253,6 +253,21 @@ body {
 }
 /*web avatar 2*/
 
+.mc-avatar-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mc-avatar-image-inactive {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.5;
+}
+/*web avatar imagem*/
+
+
+
 
 
 
