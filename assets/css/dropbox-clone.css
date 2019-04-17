@@ -1546,6 +1546,224 @@ body {
 
 
 
+/* web specific content */
+
+/* -- mobile_menu/index.web.css */
+.mc-mobile-menu-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.mc-mobile-menu-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+}
+
+.mc-mobile-menu-section {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(99, 114, 130, 0.16);
+  margin-bottom: 15px;
+  padding: 8px 0;
+}
+
+.mc-mobile-menu-section:last-child {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.mc-mobile-menu-item {
+  background: #fff;
+  border: #fff 5px;
+  font-family: 'AtlasGrotesk', sans-serif;
+  color: #0070e0;
+  font-size: 14px;
+  padding: 10px 30px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mc-mobile-menu-close-button {
+  text-align: center;
+  height: 40px;
+}
+
+/* web specific content */
+
+/* -- modal/index.web.css */
+.scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 100px;
+  height: 100px;
+  overflow: scroll;
+}
+
+.mc-no-scroll,
+.mc-no-scroll body {
+  overflow-y: hidden;
+}
+
+.mc-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 12;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08);
+}
+
+.mc-modal-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  background-color: rgba(99, 114, 130, 0.5);
+}
+
+.mc-modal-body {
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.mc-modal-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 20;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.mc-modal-close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mc-util-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mc-util-modal-regular {
+  width: 560px;
+}
+
+.mc-util-modal-small {
+  width: 432px;
+}
+
+.mc-util-modal-header {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  line-height: 64px;
+  padding: 0 24px 0 24px;
+  font-size: 16px;
+}
+
+.mc-util-modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 24px 24px 24px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.mc-util-modal-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 64px;
+  padding: 0 24px 0 24px;
+  background-color: #f7f9fa;
+  border-top: 1px solid #e6e8eb;
+  border-radius: 0 0 4px 4px;
+}
+
+.mc-util-modal-actions-buttons > * {
+  margin-left: 8px;
+}
+
+.mc-util-modal-small .mc-util-modal-actions-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.mc-util-modal-small .mc-util-modal-actions-buttons > * {
+  width: 50%;
+}
+/*mobile web*/
+
+
+
+
 
 
 
