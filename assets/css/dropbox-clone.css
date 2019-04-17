@@ -1763,6 +1763,390 @@ body {
 
 
 
+/* web specific content */
+
+/* -- overflow_button/index.web.css */
+.mc-overflow-button {
+  color: #637282;
+  padding: 0 1px; /* 32px icon + 1px border + 1px padding = 36px */
+}
+
+.mc-overflow-button-icon {
+  margin-top: -1px; /* icon height is 32px and does not consider the border */
+}
+
+.mc-overflow-button:not(:disabled):hover .mc-overflow-button-icon g,
+.mc-overflow-button:not(:disabled):active .mc-overflow-button-icon g {
+  fill: #0070e0; /* we don't have a system for changing icon colors yet, fix me */
+}
+
+/* web specific content */
+
+/* -- packages/spectrum-icons/templates/actionable/index.web.css */
+.mc-icon-template-actionable {
+}
+
+.mc-icon-template-actionable-disabled {
+  opacity: 0.5;
+}
+
+/* web specific content */
+
+/* -- packages/spectrum-icons/templates/content/index.web.css */
+.mc-icon-template-content {
+}
+
+.mc-icon-template-content-disabled {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+/* web specific content */
+
+/* -- packages/spectrum-icons/templates/selectable/index.web.css */
+.mc-icon-template-selectable path {
+  fill: #637282;
+}
+
+.mc-icon-template-selectable-hovered path,
+.mc-icon-template-selectable:not(.mc-icon-template-selectable-state-manapathed):hover path {
+  fill: #6a7c8f;
+}
+
+.mc-icon-template-selectable-active path,
+.mc-icon-template-selectable:not(.mc-icon-template-selectable-state-manapathed):active path {
+  fill: #536170;
+}
+
+.mc-icon-template-selectable-selected path {
+  fill: #0070e0;
+}
+
+.mc-icon-template-selectable-selected.mc-icon-template-selectable-hovered path,
+.mc-icon-template-selectable-selected:not(.mc-icon-template-selectable-state-manapathed):hover
+  path {
+  fill: #007af5;
+}
+
+.mc-icon-template-selectable-selected.mc-icon-template-selectable-active path,
+.mc-icon-template-selectable-selected:not(.mc-icon-template-selectable-state-manapathed):active
+  path {
+  fill: #005dd6;
+}
+
+.mc-icon-template-selectable-disabled path {
+  fill: #c1c7cd;
+}
+
+/* web specific content */
+
+/* -- packages/spectrum-icons/templates/status/index.web.css */
+.mc-icon-template-status-rotating {
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* web specific content */
+
+/* -- popover/index.web.css */
+.mc-popover-item-group-separator {
+  border: none;
+  border-bottom: 1px solid #e6e8eb;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.mc-popover-item-group:first-of-type {
+  padding-top: 8px;
+}
+
+.mc-popover-item-group:last-of-type {
+  padding-bottom: 8px;
+}
+
+.mc-popover-selectable-item {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.mc-popover-selectable-item:enabled:hover,
+.mc-popover-selectable-item:focus {
+  background-color: #f7f9fa;
+}
+
+.mc-popover-selectable-item:enabled:active {
+  background-color: #e6e8eb;
+}
+
+.mc-popover-selectable-item .mc-popover-selectable-item-checkbox {
+  cursor: pointer;
+}
+
+.mc-popover-selectable-item-selected {
+  color: #0070e0;
+  font-weight: 500;
+}
+
+.mc-popover-selectable-item-disabled .mc-popover-selectable-item-text {
+  color: #c1c7cd;
+}
+
+.mc-popover-selectable-item-content,
+.mc-popover-selectable-item-check-wrapper,
+.mc-popover-selectable-item-icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-popover-selectable-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mc-popover-selectable-item-check-wrapper {
+  min-width: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mc-popover-selectable-item-icon-wrapper {
+  min-width: 32px;
+  padding: 4px 8px 4px 0;
+}
+
+.mc-popover-selectable-item-text {
+  padding: 4px 8px 4px 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.mc-popover-item-group-title {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #637282;
+  margin: 0;
+  padding: 4px 16px 4px 32px;
+}
+
+.mc-popover {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  color: #1b2733;
+}
+
+.mc-popover-trigger {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mc-popover-content {
+  position: absolute;
+  box-sizing: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  width: 344px;
+  z-index: 1;
+}
+
+.mc-popover-content-menu {
+  padding: 0px;
+  display: inline-block;
+  box-sizing: inherit;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  min-width: 160px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08);
+  border-radius: 4px;
+  outline: none;
+}
+
+.mc-popover-content-attach-left {
+  left: 0;
+  right: auto;
+  margin-left: -8px;
+}
+
+.mc-popover-content-attach-right {
+  right: 0;
+  left: auto;
+  margin-right: -8px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mc-popover-content-position-above {
+  bottom: 100%;
+  margin-bottom: 8px;
+}
+
+.mc-popover-content-position-below {
+  top: 100%;
+  margin-top: 8px;
+}
+
+.mc-popover-content-position-right {
+  top: 0;
+  left: 100%;
+  margin-left: 10px;
+}
+
+.mc-popover-content-position-left {
+  top: 0;
+  right: 100%;
+  margin-right: 10px;
+  left: auto;
+}
+
+.mc-popover-content-scroller {
+  box-sizing: inherit;
+  display: block;
+  overflow: auto;
+}
+
+.mc-popover-content-description {
+  width: 100%;
+  box-sizing: inherit;
+  border: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.mc-popover-content-title {
+  width: 100%;
+  box-sizing: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 8px 16px 7px 16px; /* 7px because of bottom border */
+  text-align: left;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: default;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e6e8eb;
+}
+
+.mc-popover-content-title + .mc-popover-content-item {
+  margin-top: 8px;
+}
+
+.mc-popover-content-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 16px;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  display: block;
+}
+
+.mc-popover-content-item:hover {
+  background-color: #f7f9fa;
+}
+
+.mc-popover-content-item:disabled {
+  background-color: transparent;
+  color: #c1c7cd;
+  cursor: default;
+}
+
+.mc-popover-content-item:first-child {
+  margin-top: 8px;
+}
+
+.mc-popover-content-item:last-child {
+  margin-bottom: 8px;
+}
+
+.mc-popover-content-item:focus {
+  background-color: #f7f9fa;
+}
+
+.mc-popover-content-separator {
+  border: none;
+  border-bottom: 1px solid #e6e8eb;
+  margin: 8px 0 8px 16px;
+}
+/*separador qualquer que deixei aí*/
+
+
 
 
 
