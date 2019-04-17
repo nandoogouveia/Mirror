@@ -266,6 +266,21 @@ body {
 }
 /*web avatar imagem*/
 
+/* web specific content */
+
+/* -- backdrop/index.web.css */
+.mc-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  background-color: rgba(99, 114, 130, 0.5);
+}
+/* web */
+
+
 
 
 
