@@ -182,7 +182,17 @@ body {
   border: none;
   border-bottom: 1px solid #e6e8eb;
 }
-/*Menu 38*/
+/*Menu 3*/
+
+.mc-account-menu-item + .mc-account-menu-item {
+  margin: 0;
+}
+
+.mc-account-menu-item:first-child {
+  margin-top: 16px;
+}
+/*Menu 4*/
+
 
 
 
