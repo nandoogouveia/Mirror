@@ -2440,6 +2440,207 @@ clipping with .c-snackbar border. */
 /*snacbar*/
 
 
+@-webkit-keyframes snackbarload {
+  0% {
+    margin-top: 160px;
+  }
+  100% {
+    margin-top: 132px;
+  }
+}
+
+@keyframes snackbarload {
+  0% {
+    margin-top: 160px;
+  }
+  100% {
+    margin-top: 132px;
+  }
+}
+
+@-webkit-keyframes backgroundfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes backgroundfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+/* web specific content */
+
+/* -- suggestions_list/index.web.css */
+/* resetting default ul css that comes from browser */
+
+.mc-suggestions-list .mc-suggestions-list-culled-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mc-suggestions-list {
+  position: absolute;
+  width: inherit;
+  border: 1px solid #e6e8eb;
+  border-radius: 4px;
+  margin-top: 4px;
+  box-shadow: 0px 8px 16px rgba(27, 39, 51, 0.08);
+  background-color: #fff;
+  padding: 8px 0 8px 0;
+}
+
+.mc-suggestions-list-suggestion {
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 16px 16px;
+  font-size: 14px;
+  font-family: AtlasGrotesk;
+}
+
+.mc-suggestions-list-suggestion-hover,
+.mc-suggestions-list-suggestion:hover {
+  background-color: #f7f9fa;
+}
+
+.mc-suggestions-list-suggestion.selected,
+.mc-suggestions-list-suggestion-focus,
+.mc-suggestions-list-suggestion:focus {
+  background-color: #e6e8eb;
+}
+
+.mc-suggestions-list-suggestion-active,
+.mc-suggestions-list-suggestion:active {
+  background-color: #e6e8eb;
+}
+
+/* web specific content */
+
+/* -- tabbed_header/index.web.css */
+.mc-tabbed-header-list,
+.mc-tabbed-header-item,
+.mc-tabbed-header-tab,
+.mc-tabbed-header-tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-tabbed-header-list {
+  border-bottom: 1px solid #e6e8eb;
+  box-sizing: border-box;
+  font-family: 'AtlasGrotesk', sans-serif;
+  list-style-type: none;
+  margin: 0;
+  max-height: 40px;
+  padding: 0;
+}
+
+.mc-tabbed-header-item {
+  margin-right: 32px;
+}
+
+.mc-tabbed-header-tab {
+  background: none;
+  border: none;
+  color: #637282;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.mc-tabbed-header-tab:focus {
+  outline: none;
+}
+
+.mc-tabbed-header-tab-content-space {
+  font-weight: 500;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+}
+
+.mc-tabbed-header-tab-content-selected {
+  border-bottom: 1px solid #1b2733;
+  color: #1b2733;
+  font-weight: 500;
+}
+
+/* web specific content */
+
+/* -- table/index.web.css */
+.mc-table,
+.mc-table-head,
+.mc-table-body,
+.mc-table-row,
+.mc-table-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-table {
+  font-family: 'AtlasGrotesk', sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #1b2733;
+}
+
+.mc-table-head {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+}
+
+.mc-table-body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Culled table body */
+
+.mc-table-body-culled {
+  position: relative;
+}
+
+.mc-table-row {
+  border-bottom: 1px solid #e6e8eb;
+  background: #fff;
+}
+/*web Kit*/
+
+
 
 
 
