@@ -529,6 +529,14 @@ body {
 }
 /*checkbox 4*/
 
+.mc-checkbox-checked .mc-checkbox-border {
+  border: 1px solid #0070e0;
+}
+
+.mc-checkbox-mixed .mc-checkbox-mixed-icon {
+  display: block;
+}
+/*checkbox 5*/
 
 
 
