@@ -583,6 +583,21 @@ body {
 }
 /*colorizes icones*/
 
+/* web specific content */
+
+/* -- datepicker/index.web.css */
+/* DayPicker styles */
+
+.mc-datepicker .DayPicker {
+  display: inline-block;
+  width: 230px;
+}
+
+.mc-datepicker .DayPicker * {
+  outline: none;
+}
+/*Picker*/
+
 
 
 
