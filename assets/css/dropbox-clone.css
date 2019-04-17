@@ -512,6 +512,24 @@ body {
 /*checkbox 3*/
 
 
+.mc-checkbox-disabled .mc-checkbox-input:disabled ~ .mc-checkbox-border {
+  border: 1px solid #c1c7cd;
+}
+
+.mc-checkbox-input:focus ~ .mc-checkbox-border {
+  box-shadow: 0 0 0 3px #99c6f3;
+}
+
+.mc-checkbox-checked .mc-checkbox-checked-icon {
+  display: block;
+}
+
+.mc-checkbox-checked {
+  background-color: #0070e0;
+}
+/*checkbox 4*/
+
+
 
 
 
