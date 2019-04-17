@@ -328,6 +328,29 @@ body {
 }
 /*botões de focus*/
 
+/* Get rid of the Firefox inner focus border */
+
+.mc-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.mc-button-styleless {
+  /* this is the only class a styleless button gets */
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mc-button .mc-button-content {
+  position: relative; /* This seemingly useless rule is key for IE buttons to not shift upon click. */
+}
+/*botões focus Firefox*/
+
+
+
 
 
 
