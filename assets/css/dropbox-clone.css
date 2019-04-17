@@ -193,6 +193,16 @@ body {
 }
 /*Menu 4*/
 
+.mc-account-menu-item:last-child {
+  margin-bottom: 16px;
+}
+
+.mc-account-menu-item:focus {
+  background-color: #f7f9fa;
+}
+/*Menu 5*/
+
+
 
 
 
