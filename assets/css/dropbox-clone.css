@@ -691,6 +691,28 @@ body {
 }
 /*picker5*/
 
+.mc-datepicker .DayPicker-Weekday {
+  display: table-cell;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.mc-datepicker .DayPicker-Body {
+  display: table-row-group;
+}
+
+.mc-datepicker .DayPicker-Week {
+  display: table-row;
+}
+
+.mc-datepicker .DayPicker-Day {
+  display: table-cell;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+}
+/*picker6*/
 
 
 
