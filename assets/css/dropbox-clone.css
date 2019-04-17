@@ -149,6 +149,17 @@ body {
 }
 /*Menu*/
 
+.mc-account-menu-item:hover {
+  background-color: #f7f9fa;
+  text-decoration: none;
+}
+
+.mc-account-menu-item:disabled {
+  background-color: transparent;
+  color: #c1c7cd;
+  cursor: auto;
+}
+/*Menu 2*/
 
 
 
