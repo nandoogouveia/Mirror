@@ -555,6 +555,37 @@ body {
 }
 /*checkbox 6*/
 
+/* web specific content */
+
+/* -- colorized_icon/index.web.css */
+.mc-colorized-icon {
+  color: currentColor;
+}
+
+/* Modifier class added to other icons that overwrite fills and strokes */
+
+.mc-colorized-icon--colorized rect[fill]:not([fill='none']),
+.mc-colorized-icon--colorized path[fill]:not([fill='none']),
+.mc-colorized-icon--colorized circle[fill]:not([fill='none']),
+.mc-colorized-icon--colorized g[fill]:not([fill='none']) path,
+.mc-colorized-icon--colorized g[fill]:not([fill='none']) rect,
+.mc-colorized-icon--colorized g[fill]:not([fill='none']) circle {
+  fill: currentColor;
+}
+
+.mc-colorized-icon--colorized rect[stroke]:not([stroke='none']),
+.mc-colorized-icon--colorized path[stroke]:not([stroke='none']),
+.mc-colorized-icon--colorized circle[stroke]:not([stroke='none']),
+.mc-colorized-icon--colorized g[stroke]:not([stroke='none']) path,
+.mc-colorized-icon--colorized g[stroke]:not([stroke='none']) rect,
+.mc-colorized-icon--colorized g[stroke]:not([stroke='none']) circle {
+  stroke: currentColor;
+}
+/*colorizes icones*/
+
+
+
+
 
 
 
