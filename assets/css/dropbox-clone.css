@@ -450,6 +450,14 @@ body {
 }
 /*variantes de estilo 4*/
 
+.mc-button-wrap-content {
+  height: auto;
+  white-space: normal;
+  word-wrap: break-word;
+}
+/*variantes de estilo 5*/
+
+
 
 
 
