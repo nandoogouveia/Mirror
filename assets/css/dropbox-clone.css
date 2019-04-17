@@ -1447,6 +1447,102 @@ body {
 }
 /*tabela esqueleto*/
 
+.media-table-skeleton-placeholder-head::after,
+.media-table-skeleton-placeholder-content::after,
+.media-table-skeleton-placeholder-detail::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 120px;
+  height: 80px;
+  opacity: 1;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-animation-name: mediaTableGlint;
+          animation-name: mediaTableGlint;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.media-table-skeleton-placeholder-head,
+.media-table-skeleton-placeholder-content,
+.media-table-skeleton-placeholder-detail {
+  position: relative;
+  color: transparent;
+  opacity: 0.06;
+  background-color: #637282;
+}
+
+.media-table-skeleton-placeholder-head {
+  height: 12px;
+  -ms-flex-preferred-size: 32px;
+      flex-basis: 32px;
+}
+
+.media-table-skeleton-placeholder-content,
+.media-table-skeleton-placeholder-detail {
+  height: 16px;
+}
+
+.media-table-skeleton-placeholder-content {
+  -ms-flex-preferred-size: 168px;
+      flex-basis: 168px;
+  margin-right: 16px;
+}
+
+.media-table-skeleton-placeholder-detail {
+  -ms-flex-preferred-size: 32px;
+      flex-basis: 32px;
+}
+
+.media-table-skeleton-row {
+  height: 64px;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e8eb;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.media-table-skeleton-cell-content {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.media-table-skeleton-cell-detail {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.media-table-skeleton-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 64px;
+          flex: 0 0 64px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*media web*/
 
 
 
