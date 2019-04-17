@@ -2792,6 +2792,290 @@ clipping with .c-snackbar border. */
 /*index web css*/
 
 
+/* web specific content */
+
+/* -- tip_card/index.web.css */
+.mc-tip-card {
+  padding: 16px;
+  background-color: #f7f9fa;
+  border-radius: 4px;
+  border: 1px solid #e6e8eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-tip-card-description {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: 'AtlasGrotesk', sans-serif;
+  color: #1b2733;
+}
+
+.mc-tip-card-dismiss {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  margin-left: 8px;
+  height: 24px;
+}
+
+.mc-tip-card-dismiss-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.mc-tip-card-dismiss-icon g {
+  fill: #637282;
+}
+
+.mc-tip-card-dismiss-icon g:hover {
+  fill: #6a7c8f;
+}
+
+.mc-tip-card-dismiss-icon g:active {
+  fill: #536170;
+}
+
+/* web specific content */
+
+/* -- toggle/index.web.css */
+.mc-toggle {
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #637282;
+}
+
+/* Color the label text blue when checked */
+
+.mc-toggle-checked {
+  color: #0070e0;
+}
+
+/* Color the label text light grey when enabled */
+
+.mc-toggle-disabled {
+  color: #c1c7cd;
+}
+
+.mc-toggle-input-wrapper {
+  display: inline-block;
+  width: calc((12px + 4px) * 2);
+  color: #637282;
+  margin-left: 8px;
+}
+
+.mc-toggle-input {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.mc-toggle-track {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.mc-toggle-track:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 2px;
+  transition: -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+/** Make the inner part of the toggle move to the right when checked */
+
+.mc-toggle-input:checked + .mc-toggle-track:after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+/* Color the toggle track dark grey by default and make it non-selectable */
+
+.mc-toggle-track {
+  background-color: #c1c7cd;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Color the toggle track blue when checked */
+
+.mc-toggle-input:checked + .mc-toggle-track {
+  background: #0070e0;
+}
+
+/* Color the toggle track light grey when disabled */
+
+.mc-toggle-input:disabled + .mc-toggle-track {
+  background: #e6e8eb;
+}
+
+/** Color the inner part of the toggle light blue on click when enabled and checked */
+
+.mc-toggle-input-interactive:enabled:checked:active + .mc-toggle-track:after {
+  background-color: #99c6f3;
+}
+
+/** Color the inner part of the toggle dark grey when disabled */
+
+.mc-toggle-input:disabled + .mc-toggle-track:after {
+  background: #c1c7cd;
+}
+
+/* Show a pointer on hover when enabled */
+
+.mc-toggle-input:enabled,
+.mc-toggle-input:enabled + .mc-toggle-track {
+  cursor: pointer;
+}
+
+/* Draw a focus ring around the toggle */
+
+.mc-toggle-input-interactive:focus + .mc-toggle-track {
+  box-shadow: 0 0 0 3px #99c6f3;
+  border-radius: 4px;
+}
+
+/* web specific content */
+
+/* -- token/index.web.css */
+.mc-token {
+  min-width: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+  cursor: default;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 4px;
+  font-size: 13px;
+  color: #1b2733;
+  background-color: #f7f9fa;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+  box-shadow: 0px 0px 0px 1px #e6e8eb inset;
+  outline: none;
+}
+
+.mc-token:not(:focus):hover,
+.mc-token-hovered:not(.mc-token-focused):hover {
+  box-shadow: 0px 0px 0px 1px #c1c7cd;
+}
+
+.mc-token-content {
+  min-width: 0;
+  max-width: 200px;
+  display: block;
+  color: inherit;
+  padding: 5px;
+  font-family: 'AtlasGrotesk', sans-serif;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.mc-token-close {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.mc-token-close-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.mc-token-selected {
+  background-color: #6a7c8f;
+  color: #f7f9fa;
+  box-shadow: none;
+}
+
+.mc-token-close-icon path {
+  fill: #637282;
+}
+
+.mc-token-selected .mc-token-close-icon path {
+  fill: #f7f9fa;
+}
+
+.mc-token-warning {
+  background-color: #ffe28f;
+  box-shadow: none;
+}
+
+.mc-token-warning:not(:focus):hover,
+.mc-token-hovered.mc-token-warning:not(.mc-token-focused):hover {
+  box-shadow: 0px 0px 0px 1px #ffc726 inset;
+}
+
+.mc-token-selected.mc-token-warning {
+  background-color: #ffc726;
+  color: #1b2733;
+}
+
+.mc-token-selected.mc-token-warning .mc-token-close path {
+  fill: #637282;
+}
+
+.mc-token-error {
+  background-color: #f79c82;
+  box-shadow: none;
+}
+
+.mc-token-error:not(:focus):hover,
+.mc-token-hovered.mc-token-error:not(.mc-token-focused):hover {
+  box-shadow: 0px 0px 0px 1px #d62c0b inset;
+}
+
+.mc-token-error.mc-token-selected {
+  background-color: #d62c0b;
+}
+
+.mc-token-selected.mc-token-error .mc-token-close path {
+  fill: #f7f9fa;
+}
+
+.mc-token:focus.mc-token-focused {
+  box-shadow: 0 0 0 3px #99c6f3;
+}
+/*index web */
+
+
 
 
 
