@@ -2642,6 +2642,156 @@ clipping with .c-snackbar border. */
 
 
 
+/* Culled table row */
+
+.mc-table-row-culled {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.mc-table tr.mc-table-row {
+  /* override default cursor value of 'auto' on table tr {} in some user agents! */
+  cursor: inherit;
+}
+
+.mc-table-head-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-box;
+  color: #637282;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* Fixed table header row */
+
+.mc-table-head-row-fixed {
+  position: fixed;
+  z-index: 4;
+}
+
+.mc-table-cell {
+  min-width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.mc-table-head-cell {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* web specific content */
+
+/* -- tertiary_link/index.web.css */
+.mc-tertiary-link-button,
+.mc-tertiary-list,
+.mc-tertiary-list-element,
+.mc-tertiary-icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-tertiary-link-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  zoom: 1;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  text-align: left;
+
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: none;
+  margin: 0;
+  padding: 0 8px 0 0;
+  max-width: 100%;
+
+  -webkit-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+  color: #0070e0;
+}
+
+.mc-tertiary-link-button:hover {
+  color: #007af5;
+}
+
+.mc-tertiary-link-button:active {
+  color: #005dd6;
+}
+
+.mc-tertiary-link-button:focus {
+  box-shadow: 0 0 0 3px #99c6f3;
+}
+
+.mc-tertiary-link-button:disabled {
+  /* This is a magic number and should be replaced with a color
+    constant when the icon supports color filling */
+  opacity: 0.4;
+  cursor: default;
+}
+
+.mc-tertiary-link-button-content {
+  /* Wrap the button content in a flex container
+    because in some browsers (FF45) a button cannot have display flex
+  */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-tertiary-list {
+  margin: 0;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+}
+
+.mc-tertiary-list-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-tertiary-icon-wrapper {
+  margin-bottom: auto;
+  min-width: 32px;
+}
+
+.mc-tertiary-icon-text {
+  font-weight: 400;
+  /* these are magic numbers that do not exist in the design system */
+  line-height: 22px;
+  font-size: 14px;
+  padding: 5px 0;
+}
+/*index web css*/
+
+
 
 
 
