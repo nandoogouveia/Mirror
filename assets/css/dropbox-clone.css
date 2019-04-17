@@ -407,6 +407,19 @@ body {
 }
 /*disabilitar botões*/
 
+/** Additional variant styles */
+
+.mc-button-large {
+  height: 40px;
+  line-height: 40px;
+}
+
+.mc-button-small {
+  height: 20px;
+  line-height: 20px;
+}
+/*variantes de estilo*/
+
 
 
 
