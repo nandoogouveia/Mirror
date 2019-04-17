@@ -375,6 +375,19 @@ body {
   background-color: #99c6f3;
 }
 
+/** Secondary button styles */
+
+.mc-button-secondary {
+  line-height: 30px;
+  padding: 0 15px;
+  font-weight: 400;
+  border: 1px solid #c1c7cd;
+  padding: 0 16px;
+
+  color: #1b2733;
+  background-color: #fff;
+}
+/*estilos de botões 1*/
 
 
 
