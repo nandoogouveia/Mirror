@@ -458,6 +458,23 @@ body {
 /*variantes de estilo 5*/
 
 
+/* Web specfic styling */
+
+/* -- checkbox/index.web.css */
+.mc-checkbox {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 3px;
+}
+/*checkbox 1*/
+
+
+
 
 
 
