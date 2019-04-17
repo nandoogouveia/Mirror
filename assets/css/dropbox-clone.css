@@ -1003,6 +1003,61 @@ body {
 }
 /*drop 1*/
 
+/** MenuItem */
+
+.mc-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.mc-menu-item-button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+  line-height: 32px;
+  font-size: 14px;
+  text-align: left;
+
+  font-family: 'AtlasGrotesk', sans-serif;
+  color: #1b2733;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.mc-menu-item-button .mc-button-content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+.mc-menu-item:focus .mc-menu-item-button,
+.mc-menu-item-button:focus,
+.mc-menu-item-button:hover {
+  background-color: #f7f9fa;
+}
+
+.mc-menu-item-selected .mc-menu-item-button,
+.mc-menu-item-button:active {
+  color: #005dd6;
+}
+
+.mc-menu-item:first-of-type .mc-menu-item-button {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.mc-menu-item:last-of-type .mc-menu-item-button {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/*Menu Item*/
+
+
 
 
 
