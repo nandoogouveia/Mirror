@@ -1223,6 +1223,229 @@ body {
 }
 /*Web Spec 1*/
 
+/* web specific content */
+
+/* -- media_table/index.web.css */
+.mc-media-row,
+.mc-media-cell,
+.mc-media-cell-content,
+.mc-media-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mc-media-row {
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e8eb;
+  position: relative; /* support for absolute position of media-actions */
+  min-height: 64px;
+}
+
+.mc-table tr.mc-media-row {
+  /* override default cursor value of 'auto' on table tr {} in some user agents! */
+  cursor: inherit;
+}
+
+.mc-table tr.mc-media-row.mc-media-row-clickable {
+  /* nesting necessary because of above selection */
+  cursor: pointer;
+}
+
+/* Culled row */
+
+.mc-media-row-culled {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+/* Double-line height row */
+
+.mc-media-row-double-line {
+  min-height: 72px;
+}
+
+.mc-media-row-clickable:active {
+  background-color: #f0f4f5;
+}
+
+.mc-media-row-selected {
+  background-color: #ebf4fd;
+}
+
+.mc-media-row-selected.mc-media-row-clickable:active {
+  background-color: #d6e8fa;
+}
+
+.mc-media-row-droppable {
+  background-color: #edfaf1;
+}
+
+.mc-media-row-dragover {
+  background-color: #ddf0e2;
+}
+
+.mc-media-cell {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0;
+  min-height: 63px; /* 1px border */
+}
+
+.mc-media-cell-double-line {
+  min-height: 71px; /* 1px border */
+}
+
+.mc-media-cell-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 0;
+}
+
+.mc-media-cell-icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 64px;
+      flex-basis: 64px;
+}
+
+.mc-media-cell-text-title,
+.mc-media-cell-text-subtitle,
+.mc-media-cell-text-detail {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mc-media-cell-text-title,
+.mc-media-cell-text-detail {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.mc-media-cell-text-detail {
+  color: #637282;
+}
+
+.mc-media-cell-text-subtitle {
+  color: #637282;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.mc-media-cell-text-highlight {
+  color: #0070e0;
+}
+
+/* Media actions */
+
+.mc-media-actions {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 0;
+}
+
+.mc-media-actions > * {
+  margin-right: 16px;
+}
+
+/* web specific content */
+
+/* -- media_table_skeleton/index.web.css */
+@-webkit-keyframes mediaTableGlint {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@keyframes mediaTableGlint {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+.media-table-skeleton,
+.media-table-skeleton-head,
+.media-table-skeleton-head-row,
+.media-table-skeleton-head-cell,
+.media-table-skeleton-icon,
+.media-table-skeleton-body,
+.media-table-skeleton-row,
+.media-table-skeleton-cell-content,
+.media-table-skeleton-cell-detail,
+.media-table-skeleton-placeholder-head,
+.media-table-skeleton-placeholder-content,
+.media-table-skeleton-placeholder-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media-table-skeleton,
+.media-table-skeleton-head,
+.media-table-skeleton-head-row,
+.media-table-skeleton-body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.media-table-skeleton-head-cell,
+.media-table-skeleton-cell-content,
+.media-table-skeleton-cell-detail {
+  padding: 0; /* unset user agent */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-table-skeleton {
+  overflow: hidden;
+}
+
+.media-table-skeleton-head {
+  border-bottom: 1px solid #e6e8eb;
+  height: 40px;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.media-table-skeleton-head-row {
+}
+/*tabela esqueleto*/
 
 
 
