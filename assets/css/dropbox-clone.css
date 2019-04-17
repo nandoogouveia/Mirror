@@ -227,6 +227,17 @@ body {
 }
 /*avatarweb*/
 
+.mc-avatar-text-inactive {
+  opacity: 0.5;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.mc-avatar-initials-32 {
+  font-weight: 600;
+  font-size: 13px;
+}
+/*web avatar 1*/
 
 
 
