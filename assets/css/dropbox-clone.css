@@ -78,5 +78,16 @@ body {
 }
 /*navbar 1*/
 
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+/*navbar 2*/
+
+
+
+
+
 
 
