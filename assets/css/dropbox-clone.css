@@ -538,6 +538,24 @@ body {
 }
 /*checkbox 5*/
 
+.mc-checkbox-checked-icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.mc-checkbox-mixed-icon {
+  display: none;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+}
+/*checkbox 6*/
+
+
 
 
 
