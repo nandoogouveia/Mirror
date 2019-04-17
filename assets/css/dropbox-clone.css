@@ -941,6 +941,68 @@ body {
 }
 /*picher8*/
 
+/* -- dropdown_button/index.web.css */
+/*
+  Alignment of the caret and button content should probably be through flexbox
+  IE10 lacks some basic flexbox support (such as inline flex-children)
+  and text-overflow within elements with non-block parents.
+
+  https://tails.corp.dropbox.com/D245337 removed flexbox and added IE10 support.
+*/
+
+.mc-dropdown-button {
+  min-width: 200px;
+  text-align: left;
+}
+
+.mc-dropdown-button .mc-button-content::before {
+  float: right;
+  display: inline-block;
+  content: '';
+
+  /* create a triangle with borders */
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #637282;
+  margin: 14px 0 12px 16px; /* 2px is a visual alignment adjustment */
+}
+
+.mc-dropdown-button-content {
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* web specific content */
+
+/* -- dropdown_menu/index.web.css */
+/** DropdownMenu */
+
+.mc-dropdown-menu {
+}
+
+.mc-dropdown-menu-button {
+}
+
+/** Menu */
+
+.mc-menu {
+  padding: 0;
+  margin-top: 8px;
+  width: 200px;
+  max-height: 320px;
+  overflow: auto;
+  position: absolute;
+  z-index: 1;
+
+  font-family: 'AtlasGrotesk', sans-serif;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(99, 114, 130, 0.16), 0 8px 16px rgba(27, 39, 51, 0.08);
+  border-radius: 4px;
+}
+/*drop 1*/
+
 
 
 
