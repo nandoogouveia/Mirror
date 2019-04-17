@@ -280,6 +280,38 @@ body {
 }
 /* web */
 
+/* web specific content */
+
+/* -- button/index.web.css */
+/** All styled buttons */
+
+.mc-button {
+  display: inline-block;
+  zoom: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  height: 32px;
+
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: none;
+  margin: 0;
+}
+/*estilos dos botões*/
 
 
 
