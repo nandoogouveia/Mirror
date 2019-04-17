@@ -420,6 +420,17 @@ body {
 }
 /*variantes de estilo*/
 
+.mc-button-borderless,
+.mc-button-borderless:active,
+.mc-button-borderless:hover,
+.mc-button-borderless:disabled {
+  border-color: transparent;
+}
+/*variantes de estilo 2*/
+
+
+
+
 
 
 
