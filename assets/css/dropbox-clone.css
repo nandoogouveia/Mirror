@@ -387,7 +387,19 @@ body {
   color: #1b2733;
   background-color: #fff;
 }
-/*estilos de botões 1*/
+/*estilos de botões secundarios 1*/
+
+.mc-button-secondary:hover {
+  border-color: #007af5;
+  color: #007af5;
+}
+
+.mc-button-secondary:active {
+  border-color: #005dd6;
+  color: #005dd6;
+}
+/*estilos de botões secundarios 2*/
+
 
 
 
