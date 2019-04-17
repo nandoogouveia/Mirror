@@ -2226,6 +2226,89 @@ body {
 
 
 
+_:-ms-lang(x),
+.mc-radio,
+.mc-radio::-ms-check {
+  border: 1px solid #c1c7cd;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio:checked,
+.mc-radio:checked::-ms-check {
+  border: 5px solid #0070e0;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio:hover,
+.mc-radio:hover::-ms-check {
+  border: 2px solid #0070e0;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio:checked:hover:not(.mc-radio-disabled),
+.mc-radio:checked:hover:not(.mc-radio-disabled)::-ms-check {
+  border: 5px solid #007af5;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio:focus,
+.mc-radio:focus::-ms-check {
+  border: 3px solid #99c6f3;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio:focus:active,
+.mc-radio:focus:active::-ms-check {
+  border: 1px solid #0070e0;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio:checked:focus {
+  border: 5px solid #0070e0;
+  box-shadow: 0 0 0 3px #99c6f3;
+}
+
+_:-ms-lang(x),
+.mc-radio:checked:focus::-ms-check {
+  border: 5px solid #0070e0;
+}
+
+_:-ms-lang(x),
+.mc-radio:checked:active:not(:disabled),
+.mc-radio:checked:active:not(:disabled)::-ms-check {
+  border: 5px solid #005dd6;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio-disabled:hover,
+.mc-radio-disabled:hover::-ms-check {
+  border: 1px solid #c1c7cd;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio-disabled,
+.mc-radio-disabled::-ms-check {
+  border: 1px solid #c1c7cd;
+  box-shadow: none;
+}
+
+_:-ms-lang(x),
+.mc-radio-disabled:checked,
+.mc-radio-disabled:checked::-ms-check {
+  border: 5px solid #e6e8eb;
+  box-shadow: none;
+}
+/*ste 2*/
+
+
 
 
 
